@@ -34,6 +34,8 @@ class _UserScreenState extends State<UserScreen> {
   }
 
   Future<void> fetchUsers() async {
+    
+
     final response = await http.get(Uri.parse(apiUrl));
     if (response.statusCode == 200) {
       final List data = json.decode(response.body);
