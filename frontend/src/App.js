@@ -20,6 +20,7 @@ function App() {
   };
 
   const handleChange = (e) => {
+    
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
@@ -50,7 +51,7 @@ function App() {
 
   return (
     <div style={{ maxWidth: "600px", margin: "50px auto" }}>
-      <h2>User Management</h2>
+      <h2>User Management system</h2>
 
       {/* Form */}
       <form onSubmit={handleSubmit}>
